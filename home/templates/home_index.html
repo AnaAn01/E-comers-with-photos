@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<body>
+
+<h2>Offers</h2>
+{% for item in items %}
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="home_detail.html">
+      <img class="card-img-top" src="{{ item.image.url }}" width="600" height="400"/>
+    </a>
+    <div class="desc">
+     <h5 class="card-title">{{ item.name }}</h5>
+     <p class="card-text">{{ item.description }}</p>
+     <h5 class="card-title">{{ item.price }}</h5>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</body>
+
