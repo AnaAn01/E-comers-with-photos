@@ -3,19 +3,33 @@
 
 <body>
 
-<h2>Offers</h2>
+<div class="topnav">
+  <a class="active" href="{% url 'home_index' %}">Catalog</a>
+  <a href="{% url 'about' %}">About us</a>
+  <a href="#">Contacts</a>
+</div>
+
+<div class="about-section">
+  <h1>Bake and Take</h1>
+  <p>Catalog</p>
+</div>
+
+<h2></h2>
 {% for item in items %}
+
 <div class="responsive">
+
   <div class="gallery">
-    <a target="_blank" href="home_detail.html">
+    <a target="_blank" href="{% url 'home_detail' item.pk %}">
       <img class="card-img-top" src="{{ item.image.url }}" width="600" height="400"/>
-    </a>
+
     <div class="desc">
      <h5 class="card-title">{{ item.name }}</h5>
-     <p class="card-text">{{ item.description }}</p>
-     <h5 class="card-title">{{ item.price }}</h5>
+     <h5 class="card-title">{{ item.price }} ₴</h5>
+
     </div>
   </div>
+    </a>
 </div>
 {% endfor %}
 </body>

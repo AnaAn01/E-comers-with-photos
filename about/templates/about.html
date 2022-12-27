@@ -1,0 +1,54 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style_3.css' %}">
+
+<div class="topnav">
+  <a href="{% url 'home_index' %}">Catalog</a>
+  <a class="active" href="{% url 'about' %}">About us</a>
+  <a href="#">Contacts</a>
+
+</div>
+
+<div class="about-section">
+  <h1>About Bake and Take</h1>
+  <p>Confectionery for every taste!</p>
+  <p>High-quality sweets in assortment and to order</p>
+</div>
+
+<h2 style="text-align:center">Our offers</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'img/bakery_600.jpg' %}" style="width:100%">
+      <div class="container">
+        <h2>Our confectionery in the city of Stryi</h2>
+        <p class="title">Address: Tarasa Shevchenko Street</p>
+        <p>We are waiting for you in our pastry shop, where fresh sweets and delicious coffee will await you!</p>
+        <p><button class="button">Map</button></p>
+      </div>
+    </div>
+  </div>
+
+   <div class="column">
+    <div class="card">
+      <img src="{% static 'img/lemon_600.jpg' %}" style="width:100%">
+      <div class="container">
+        <h2>Confectionery to order for any taste</h2>
+        <p class="title">Instagram: @Bake_and_Take</p>
+        <p>Confectionery to your order for any holiday with delivery or pick-up from our store.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'img/curs_600.jpg' %}" style="width:100%">
+      <div class="container">
+        <h2>Our confectionery courses and raising qualifications</h2>
+        <p class="title">Phone number: 0671187633</p>
+        <p>You can take a confectionary course for beginners and advanced training at an intermediate level.</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>

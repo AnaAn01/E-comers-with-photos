@@ -1,3 +1,42 @@
+body{
+    background: linear-gradient(to bottom right, #d0abe0, #f2ebf7);
+}
+
+.topnav {
+  background-color: #524052;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #c754c7;
+  color: white;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  }
+
+
 div.gallery {
   border: 1px solid #ccc;
 }
@@ -24,4 +63,9 @@ div.desc {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
+}
+
+a {
+color: inherit;
+text-decoration : none;
 }
